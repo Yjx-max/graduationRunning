@@ -8,7 +8,6 @@ export default {
 </script>
 
 <script setup>
-let mymap;
         onMounted(() => {
 
             var map
@@ -23,10 +22,6 @@ let mymap;
                 html: '<div style="width: 30px; height: 30px; background-color: white;"></div>'
             });
             leaflet.marker([50, 30], {icon: myIcon}).addTo(map);
-
-            // leaflet.marker([0, 0]).addTo(map).bindPopup("I am the position1.");
-
-
 
         });
 
